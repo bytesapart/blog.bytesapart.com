@@ -1,0 +1,34 @@
+# Site Settings
+baseurl: 		""
+title: 			BytesApart
+
+name: 			BytesApart
+description: 	A programmer's candid learning experience
+url: 			"https://bytesapart.com"
+
+paginate: 		3
+paginate_path: 	"blog/page:num"
+
+twitter: 		bytesapart
+email: 			iqbal.osama@icloud.com
+
+disqus: 		osama_iqbal
+analytics: 		UA-3618368-4
+
+copyright: 		Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+
+# Build Settings
+permalinks: 	pretty
+highlighter: none
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-algolia
+
+# algolia
+algolia:
+  application_id: 29LQL8O21T
+  index_name:     bytestrial
+  search_only_api_key: b000cbfb4bd13c46cd7b42599b253a49

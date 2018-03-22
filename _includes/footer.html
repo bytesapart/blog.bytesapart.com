@@ -1,0 +1,24 @@
+    {% if site.copyright or site.email %}
+
+      <footer data-animation="fadeInUp">
+        <div class="copyright">
+          {% if site.copyright %}<b>{{ site.copyright }}<br /><br /></b> Powered with <span class="heart"></span> from <a href="https://jekyllrb.com/">Jekyll</a>.{% endif %}
+        	<br /><br />{% if site.email %}<a href="mailto:{{ site.email }}" title="Send E-Mail">Contact</a>{% endif %}
+        	<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="Subscribe to Feed">RSS</a>
+        </div>
+      </footer>
+
+    {% endif %}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js.map"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="{{ '/assets/scripts.js' | prepend: site.baseurl }}"></script>
+
+    {% include algolia.html %}
+
+  </body>
+
+</html>
