@@ -2,9 +2,13 @@
 
       <footer data-animation="fadeInUp">
         <div class="copyright">
-          {% if site.copyright %}<b>{{ site.copyright }}<br /><br /></b> Powered with <span class="heart"></span> from <a href="https://jekyllrb.com/">Jekyll</a>.{% endif %}
-        	<br /><br />{% if site.email %}<a href="mailto:{{ site.email }}" title="Send E-Mail">Contact</a>{% endif %}
-        	<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="Subscribe to Feed">RSS</a>
+          {% if site.copyright %}<b>{{ site.copyright }}<br />
+            <br /></b> Hosted with <span class="heart"></span> at <a href="https://gitlab.com/bytesapart/bytesapart.com">Gitlab</a>.<br />
+            <br /></b> Powered by <a href="https://jekyllrb.com/">Jekyll</a>.
+          {% endif %}
+
+        	<br /><br /><hr>{% if site.email %}<a href="mailto:{{ site.email }}" title="Send E-Mail">Contact</a>{% endif %}
+        	<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="Subscribe to Feed" class="footer-meta">RSS</a>
         </div>
       </footer>
 
