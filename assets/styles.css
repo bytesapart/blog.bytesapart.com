@@ -660,6 +660,7 @@ body > footer {
         background: #eb2344; }
 
     body > footer .copyright a { margin: 0px }
+    body > footer .copyright .footer-meta { margin: 6px }
 
     /* Preloader */
     .spinner {
