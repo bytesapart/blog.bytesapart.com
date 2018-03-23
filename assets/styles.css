@@ -273,7 +273,7 @@ body > header {
         right: 0;
         background-position: -35px 0; }
 
-    body > header .toggle.open:after { background-position: -103px 0 }
+    body > header .toggle.open:after { background-position: -102px 0 }
 
     body > header nav {
         /* width: 306px; */
