@@ -346,6 +346,12 @@ body > header {
     -moz-filter: saturate(100%);
     -o-filter: saturate(100%); }
 
+.content article header:hover .overlay + .excerpt{
+    opacity: 0; }
+
+.content article header:hover .scroll{
+    opacity: 0; }
+
 .content article header .excerpt {
     width: 634px;
     position: absolute;
