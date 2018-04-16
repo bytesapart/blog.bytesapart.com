@@ -426,7 +426,7 @@ body > header {
         position: relative;
         min-height: 150px;
         height: auto;
-        margin: 68px -81px; }
+        margin: 28px -81px; }
 
         .content article .body .summary .media{ margin: 0; }
 
@@ -808,7 +808,7 @@ code { padding: 3px 6px; color: #abb2bf; font-family: "Fira Code", monospaced;}
       width: 634px;
     }
 
-    .content article .body .media { margin: 68px 0 }
+    .content article .body .media { margin: 28px 0 }
     .content article .body .summary .media {padding-bottom: 10px;}
 
     .content article .body .media.youtube iframe, .content article .body .media.vimeo iframe {
