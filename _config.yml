@@ -32,5 +32,5 @@ plugins:
 # algolia
 algolia:
   application_id: 29LQL8O21T
-  index_name:     bytestrial
+  index_name:     bytesapart
   search_only_api_key: b000cbfb4bd13c46cd7b42599b253a49

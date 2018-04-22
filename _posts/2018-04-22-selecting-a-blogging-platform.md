@@ -5,7 +5,7 @@ title: Selecting a Blogging Platform
 type: post
 navigation: false
 
-date:   		2018-03-29 00:02:43
+date:   		2018-04-22 00:12:05
 excerpt: 		In the quest of starting a blog, I was faced by numerous choices of blogging platforms.
             Here's my experience with them, and why I ended up choosing what I chose.
 categories:		programming
@@ -101,7 +101,22 @@ a higher degree of quality over their open-source parts. There was this one part
 This happened to be a port of a Ghost Theme (Lightweight Wordpress, in my opinion).
 
 I did like the theme, but I didn't love it. After spending some time with Pelican trying to learn and modify the theme, I realised that I'd have to do a ton
-of web development to give it the quality I require and not make it feel like a generation off-the-shelf theme. This again proved to be hectic due to the
+of web development to give it the quality I require and not make it feel like a generic off-the-shelf theme. This again proved to be hectic due to the
 time constraint which I had, though I got to learn a lot about static site generators from there. What killed my decision to use Pelican and for that matter
-even [Hugo]() was the fact that there were themes, some really good ones too, but none that fit my taste, and none with that premium feel to it, which I
+even [Hugo](https://gohugo.io/) was the fact that there were themes, some really good ones too, but none that fit my taste, and none with that premium feel to it, which I
 could potentially purchase if I felt like it.
+
+<hr>
+## **Dr. Jekyll**
+<hr>
+{% include media-image.html file="jekyll_logo-selecting_a_blogging_platform.png" title="Jekyll" caption="Static site generation behemoth.<br />Image Credits: <strong><a href='https://github.com/jekyll/brand' style='color: #eb2344;text-decoration: none;'>Jekyll Brand</a>.</strong><br /> Image License: <strong><a href='https://github.com/jekyll/brand/blob/master/LICENSE' style='color: #eb2344;text-decoration: none;'>CC-BY-4.0</a>.</strong>"%}
+After picking up Pelican for some time, I looked into other Static Site Generators, though not from a coding or API perspective. I looked at them from a 'Users' perspective to decide whether
+the criteria of premium themes was fitting perfectly. Out of all the generators, Jekyll stood out. Jekyll seemed to be one of the oldest generators out there, with a thriving
+community, loads of tutorials for it, along with a bunch of premium themes, along with free ones that had a premium feel to it. Two themes that caught my attention were
+[Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) and [Hashtag](https://themeforest.net/item/hashtag-for-jekyll-an-elegant-blog-theme/7721454). I loved them both. The former was free of cost, while the latter being premium. I came across the former theme through a [blog post](https://mtlynch.io/why-i-quit-google/) which went viral on Reddit.
+The premium theme was somewhat old, and had not been updated, breaking on chrome. I did like it's out-of-the-box animations and colour schemes, while maintaining a minimalistic look.
+Either way, I had to modify both the themes to a degree to my liking. I decided to go with the premium theme even though it had browser compatibility as I wouldn't have to deal
+with much JQuery/Javascript, something which I was trying to avoid actively. The free theme was loaded with SEO options and optimized very, very well because of which I wasn't so
+concrete in my decision to go with the premium theme.
+
+Jekyll gave me all the perks which were available in other generators, with the added benefit of being stable due to its age, and the fact that it had really exetensive step-by-step documentation, along with the fact that there was and option of premium themes which looked good. In the end, I hacked away a little bit at both the themes, only to realise that the premium one had some decent SEO related modifications. I decided to stick with the premium one. In my next blog post, I'll cover what modifications went into the theme, and the frustration of returning to the world of web development after a very long time.
