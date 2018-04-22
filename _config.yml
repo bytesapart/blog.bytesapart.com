@@ -13,7 +13,7 @@ paginate_path: 	"blog/page:num"
 twitter: 		bytesapart
 email: 			iqbal.osama@icloud.com
 
-disqus: 		osama_iqbal
+disqus: 		bytesapart
 analytics: 		UA-3618368-4
 
 copyright: 		Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.
