@@ -12,7 +12,7 @@ categories:		programming
 gradient: 		2
 image: 			selecting_a_blogging_platform.jpg
 details:		false
-permalink: "/selecting-a-blogging-platform"
+permalink: "/selecting-a-blogging-platform/"
 
 author: 		Osama Iqbal
 bio: 			Data is always in a state of quantum superposition, unless observed upon by visualizations.
