@@ -93,7 +93,7 @@ written along with the HTML to generate pages on the fly. This way, your final u
 CI (Continuous Integration) to keep building your site on every code commit to a particular Version Control Software's branch. This works amazingly well,
 as the HTML can be cooked up by a single person, with a little bit of template code specific to every static site generator.
 
-Pelican, being a static site generator, had the above pluses. Adding to that, it had a sizeable community and used Jinja Templaing, which was somewhat
+Pelican, being a static site generator, had the above pluses. Adding to that, it had a sizeable community and used Jinja Templating, which was somewhat
 in familiar territory, and it was written in python, which meant the installation will be easier and if things go south, there would be less chances of
 me shying out to dive deeper into the code to fix the problem, rather than finding an alternate around it. The only problem that I had with Pelican was
 that it didn't have good templates. The theming community seemed to not be interested in releasing commercial themes which could be purchased but have
@@ -119,4 +119,4 @@ Either way, I had to modify both the themes to a degree to my liking. I decided 
 with much JQuery/Javascript, something which I was trying to avoid actively. The free theme was loaded with SEO options and optimized very, very well because of which I wasn't so
 concrete in my decision to go with the premium theme.
 
-Jekyll gave me all the perks which were available in other generators, with the added benefit of being stable due to its age, and the fact that it had really exetensive step-by-step documentation, along with the fact that there was and option of premium themes which looked good. In the end, I hacked away a little bit at both the themes, only to realise that the premium one had some decent SEO related modifications. I decided to stick with the premium one. In my next blog post, I'll cover what modifications went into the theme, and the frustration of returning to the world of web development after a very long time.
+Jekyll gave me all the perks which were available in other generators, with the added benefit of being stable due to its age, and the fact that it had really extensive step-by-step documentation, along with the fact that there was and option of premium themes which looked good. In the end, I hacked away a little bit at both the themes, only to realise that the premium one had some decent SEO related modifications. I decided to stick with the premium one. In my next blog post, I'll cover what modifications went into the theme, and the frustration of returning to the world of web development after a very long time.
