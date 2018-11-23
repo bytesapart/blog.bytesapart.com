@@ -19,6 +19,7 @@ test:
 pages:
   stage: deploy
   script:
+  - gem install jekyll
   - bundle exec jekyll build -d public
   artifacts:
     paths:
