@@ -30,9 +30,9 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-# Repace Sass with sassc
-gem "sassc"
-
-# Replace jekyll-sass-converter with jekyll-sassc-converter
-gem "jekyll-sass-converter", :git =>
-"https://github.com/searls/jekyll-sassc-converter.git"
+# # Repace Sass with sassc
+# gem "sassc"
+#
+# # Replace jekyll-sass-converter with jekyll-sassc-converter
+# gem "jekyll-sass-converter", :git =>
+# "https://github.com/searls/jekyll-sassc-converter.git"
