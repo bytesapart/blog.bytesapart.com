@@ -31,4 +31,8 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Repace Sass with sassc
-gem "sassc-rails"
+# gem "sassc"
+
+# Replace jekyll-sass-converter with jekyll-sassc-converter
+gem "jekyll-sass-converter", :git =>
+"https://github.com/searls/jekyll-sassc-converter.git"
