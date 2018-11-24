@@ -11,7 +11,7 @@ paginate: 		3
 paginate_path: 	"blog/page:num"
 
 twitter: 		bytesapart
-email: 			iqbal.osama@icloud.com
+email: 			osama@bytesapart.com
 
 disqus: 		bytesapart
 analytics: 		UA-3618368-4
