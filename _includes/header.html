@@ -54,6 +54,8 @@
       },
       "theme": "classic",
       "type": "opt-in",
+      "revokable":true,
+      
       onInitialise: function (status) {
       var type = this.options.type;
       var didConsent = this.hasConsented();
@@ -64,7 +66,6 @@
       }
       if (type == 'opt-in' && !didConsent) {
         // disable cookies
-        console.log('Init disabled');
         window['ga-disable-{{site.analytics}}'] = true;
         analytics = false;
       }
@@ -80,7 +81,6 @@
       }
       if (type == 'opt-in' && !didConsent) {
         // disable cookies
-        console.log('Init disabled');
         window['ga-disable-{{site.analytics}}'] = true;
         analytics = false;
       }
@@ -88,14 +88,8 @@
 
     onRevokeChoice: function() {
       var type = this.options.type;
-      if (type == 'opt-in' && didConsent) {
-        // enable cookies
-        window['ga-disable-{{site.analytics}}'] = false;
-        analytics = true;
-      }
-      if (type == 'opt-in' && !didConsent) {
+      if (type == 'opt-in') {
         // disable cookies
-        console.log('Init disabled');
         window['ga-disable-{{site.analytics}}'] = true;
         analytics = false;
       }
