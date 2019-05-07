@@ -1,4 +1,10 @@
-{% if page.image %}<div class="overlay" style="background-image: url({{ site.baseurl }}/images/{{ page.image }});" data-parallax="9"></div>{% endif %}
+{% if page.image %}
+	{% if page.type == 'home' %}
+		<div class="overlay" style="background-image: url({{ site.baseurl }}/images/{{ page.image }});" data-parallax="9"></div>
+	{% else %}	
+		<div class="overlay" style="background-image: url({{ site.baseurl }}/images{{ page.permalink }}{{ page.image }});" data-parallax="9"></div>
+	{% endif %}
+{% endif %}
       
 <div class="excerpt">
         

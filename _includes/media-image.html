@@ -1,7 +1,7 @@
 <div class="media image" data-animation="fadeInUp">
 
 	{% if include.file %}
-		<img src="{{ include.file | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ include.title }}" />
+		<img src="{{ include.file | prepend: include.folder | prepend: '/images' | prepend: site.baseurl | strip}}" alt="{{ include.title }}" />
 	{% endif %}
 
 	{% if include.title or include.caption or include.link %}

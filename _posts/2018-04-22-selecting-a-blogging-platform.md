@@ -21,6 +21,9 @@ linkedin: 		"https://www.linkedin.com/in/osamaiqbal/"
 rss: 			"https://www.bytesapart.com/feed.xml"
 
 ---
+{%- capture images_folder -%}
+    {{ page.permalink }}
+{%- endcapture -%}
 
 For the past year, in my spare time, I've always tried to start a blog that would end up being a detailed repository of whatever
 I've learnt or whatever I'll be learning. The most challenging part of this happens to be selecting a blogging platform that gives
@@ -29,7 +32,7 @@ you the flexibility to edit, and offers a good user experience to those that vis
 <hr>
 ## **The Checklist**
 <hr>
-{% include media-image.html file="checklist-selecting_a_blogging_platform.jpg" title="Checklist" caption="A checklist of desired features helped in narrowing down the hunt" %}
+{% include media-image.html folder=images_folder file="checklist-selecting_a_blogging_platform.jpg" title="Checklist" caption="A checklist of desired features helped in narrowing down the hunt" %}
 Out of the plethora of blogging platforms available, I needed something which satisfied certain criteria. This 'checklist' acted like
 a filter which helped me narrow down to my solution. I did not treat this list as a hardcoded requirement that I must adhere to, but
 something that adds points towards what I desire from the platform. The list happens to be
@@ -48,7 +51,7 @@ the blogging framework, but custom Docker images which would make life easier we
 <hr>
 ## **The Wordpress Addiction**
 <hr>
-{% include media-image.html file="wordpress-selecting_a_blogging_platform.jpg" title="Wordpress" caption="The undisputed king" %}
+{% include media-image.html folder=images_folder file="wordpress-selecting_a_blogging_platform.jpg" title="Wordpress" caption="The undisputed king" %}
 Wordpress happened to be an almost natural choice, given the fact that while I was in university, I used to make a ton of
 Wordpress websites for clients, which involved integrating WooCommerce, Visual Composer and other famous plugins for added functionality.
 Wordpress happens to be this batteries-included, all-inclusive powerhouse. Its customisability is far ahead of all other blogging platforms.
@@ -77,7 +80,7 @@ hosting costs which I could never recover since it was meant to be more of a per
 <hr>
 ## **Fishing with Pelican**
 <hr>
-{% include media-image.html file="fishing-with-pelican-selecting_a_blogging_platform.jpg" title="Pelican" caption="A pythonic static generator" %}
+{% include media-image.html folder=images_folder file="fishing-with-pelican-selecting_a_blogging_platform.jpg" title="Pelican" caption="A pythonic static generator" %}
 My forte happens to be the Python programming language. Even though I boast about being a polyglot, there are only a couple of languages that I know
 of very well due to ages of practising. My full-time Job also happens to be heavy on Python, so it was only natural that I searched for a platform
 that used python. [Pelican](https://blog.getpelican.com/) happens to be a perfect fit for this. It's a static site generator, which means that
@@ -106,7 +109,7 @@ could potentially purchase if I felt like it.
 <hr>
 ## **Dr. Jekyll**
 <hr>
-{% include media-image.html file="jekyll_logo-selecting_a_blogging_platform.png" title="Jekyll" caption="Static site generation behemoth.<br />Image Credits: <strong><a href='https://github.com/jekyll/brand' style='color: #eb2344;text-decoration: none;'>Jekyll Brand</a>.</strong><br /> Image License: <strong><a href='https://github.com/jekyll/brand/blob/master/LICENSE' style='color: #eb2344;text-decoration: none;'>CC-BY-4.0</a>.</strong>"%}
+{% include media-image.html folder=images_folder file="jekyll_logo-selecting_a_blogging_platform.png" title="Jekyll" caption="Static site generation behemoth.<br />Image Credits: <strong><a href='https://github.com/jekyll/brand' style='color: #eb2344;text-decoration: none;'>Jekyll Brand</a>.</strong><br /> Image License: <strong><a href='https://github.com/jekyll/brand/blob/master/LICENSE' style='color: #eb2344;text-decoration: none;'>CC-BY-4.0</a>.</strong>"%}
 After picking up Pelican for some time, I looked into other Static Site Generators, though not from a coding or API perspective. I looked at them from a 'Users' perspective to decide whether
 the criteria of premium themes was fitting perfectly. Out of all the generators, Jekyll stood out. Jekyll seemed to be one of the oldest generators out there, with a thriving
 community, loads of tutorials for it, along with a bunch of premium themes, along with free ones that had a premium feel to it. Two themes that caught my attention were
