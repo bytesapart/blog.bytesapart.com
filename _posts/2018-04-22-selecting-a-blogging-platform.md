@@ -17,7 +17,6 @@ permalink: "/selecting-a-blogging-platform/"
 author: 		Osama Iqbal
 bio: 			Data is always in a state of quantum superposition unless observed upon by visualisations.
 twitter: 		"http://twitter.com/bytesapart"
-google: 		"https://plus.google.com/+OsamaIqbal"
 linkedin: 		"https://www.linkedin.com/in/osamaiqbal/"
 rss: 			"https://www.bytesapart.com/feed.xml"
 
