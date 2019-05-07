@@ -4,6 +4,7 @@ variables:
   JEKYLL_ENV: production
 
 before_script:
+  - bundle update --bundler
   - bundle install
 
 test:
