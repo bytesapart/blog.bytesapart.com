@@ -565,7 +565,9 @@ body > header {
 
             .content article footer .share ul li a.twitter:before { background-position: -144px 0 }
 
-            .content article footer .share ul li a.facebook:before { background-position: -162px 0 }
+            .content article footer .share ul li a.facebook:before { background-position: -161px 0 }
+
+            .content article footer .share ul li a.linkedin:before { background-position: -179px 0 }
 
             .content article footer .share ul li a.google:before { background-position: -180px 0 }
 

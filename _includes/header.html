@@ -14,13 +14,13 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:description" content="{{ site.description | truncate: 300 }}" />
     <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:image" content="{{ page.image | prepend: '/images/' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:image" content="{{ page.image | prepend: page.permalink | prepend: '/images/' | prepend: site.baseurl | prepend: site.url }}" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:description" content="{{ site.description | truncate: 200 }}" />
     <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
-    <meta name="twitter:image" content="{{ page.image | prepend: '/images/' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="twitter:image" content="{{ page.image |  prepend: page.permalink | prepend: '/images/' | prepend: site.baseurl | prepend: site.url }}" />
     <meta name="twitter:site" content="{{ site.twitter | prepend: '@' }}" />
 
     <link rel="alternate" href="{{ '/feed.xml' | prepend: site.baseurl }}" type="application/rss+xml" title="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />

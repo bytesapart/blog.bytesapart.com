@@ -34,7 +34,7 @@ That said, this post is a continuation of the [first part](https://www.bytesapar
 {% include media-image.html folder=images_folder file="the_jekyll_structure-selecting_a_blogging_platform_ii.jpeg" title="Jekyll Structure" caption="Understanding Jekyll's file structure" %}
 At this point, I wasn't familiar with any of the cool, new stuff coming out from Javascript. For me, this 'template' style programming was completely new. Nonetheless, since Jekyll seemed to be the most convenient option that I had, I decided to dive straight into it.
 
-The best place to start off learning anything new is to check out the documentation. If it is a well-established source, it'll surely contain some form of 'Hello-World' program. Jekyll's website seems to have substantial documentation which was super newbie friendly. I started with the [quickstart](https://jekyllrb.com/docs/) guide, which consisted of a  couple of fairly straightforward commands, after the installation of [Ruby](https://jekyllrb.com/docs/installation/). At first, I was confused seeing two Ruby stable versions on the download page. I ended up with the lesser of the two keeping in mind that my theme was fairly old, so the more bleeding edge version of ruby, the more likely I'll have troubles setting the Jekyll blog up.I ended up following the instructions through, and spinning up a default blog. To my surprise, the blog looked really good in it's minimal glory. To add to it, I was taken aback on how simple it was to get started, unlike WordPress where one needed to setup XAMPP or get a custom third-party software to spin up an instance.
+The best place to start off learning anything new is to check out the documentation. If it is a well-established source, it'll surely contain some form of 'Hello-World' program. Jekyll's website seems to have substantial documentation which was super newbie friendly. I started with the [quickstart](https://jekyllrb.com/docs/) guide, which consisted of a  couple of reasonably straightforward commands, after the installation of [Ruby](https://jekyllrb.com/docs/installation/). At first, I was confused seeing two Ruby stable versions on the download page. I ended up with the lesser of the two keeping in mind that my theme was fairly old, so the more bleeding edge version of Ruby, the more likely I'll have troubles setting the Jekyll blog up. I ended up following the instructions through and spinning up a default blog. To my surprise, the blog looked good in its minimal glory. To add to it, I was taken aback on how simple it was to get started, unlike WordPress where one needed to setup XAMPP or get a custom third-party software to spin up an instance.
 
 The following is a simple Jekyll structure, when you initialise an empty directory, with the assumption of following the quickstart guide on Jekyll's website.
 <pre><code class="plaintext">
@@ -50,17 +50,17 @@ myblog
   |- index.md
 </code></pre>
 
-At this point, I was slightly lost in what could all these folders/files possibly mean. From my experiences, I've known to learn basics quickly from video tutorials and then get to the advanced part with the help of the documentation. I searched YouTube, and found this great tutorial by [GiraffeAcademy](https://www.youtube.com/watch?v=T1itpPvFWHI&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB), which worked wonders.
+At this point, the possibility of what these files/folders meant made me feel lost. From my experiences, I've known to learn basics quickly from video tutorials and then get to the tricky part with the help of the documentation. I searched YouTube and found this great tutorial by [GiraffeAcademy](https://www.youtube.com/watch?v=T1itpPvFWHI&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB), which worked wonders.
 
-Let's start off with the "_posts" folder. This, as the name suggests, is the folder where all the posts reside. If you do notice from the sample, the posts are all written in ".md" format, or [MarkDown](https://guides.github.com/features/mastering-markdown/). The "_site" folder consists of the rendered site, when you run a 'jekyll serve' command. I wont be going in-depth about the basics of Jekyll, since there are ample of tutorials out there describing what liquid templating, front matter and the various other esoteric terms are. Instead, I'll be focusing on my thought-process of taking an off-the-self theme and customizing it to my liking.
+Let's start with the "_posts" folder, which, as the name suggests, is the folder where all the posts reside. If you do notice from the sample, the posts are all written in ".md" format, or [MarkDown](https://guides.github.com/features/mastering-markdown/). The "_site" folder consists of the rendered site when you run a 'Jekyll serve' command. I won't be going in-depth about the basics of Jekyll since there are ample tutorials out there describing what liquid templating, front matter and the various other esoteric terms are. Instead, I'll be focusing on my thought-process of taking an off-the-shelf theme and customizing it to my liking.
 
 <hr>
 ## **Fixing A Broken Theme**
 <hr>
 {% include media-image.html folder=images_folder file="a_broken_theme-selecting_a_blogging_platform_ii.jpg" title="A Broken Theme" caption="Repairing off-the-shelf theme" %}
-The theme upon "Jekyll Serving", seemed to work fine in Mozilla Firefox. Every theme is expected to run straight out-of-the-box when purchased, since you are paying a premium for it. Unfortunately, I knew something had to be amiss, since this theme was made during the initial years of Jekyll's popularity. Upon checking cross-browser compatibility, I found out that the theme broke on Google Chrome. This led me spiralling down a number of fixes and customisations to an otherwise very satisfying theme.
+The theme upon "Jekyll Serving", seemed to work fine in Mozilla Firefox. Every theme is expected to run straight out-of-the-box when purchased since you are paying a premium for it. Unfortunately, I knew something had to be amiss since this theme's inception was during the initial years of Jekyll's popularity. Upon checking cross-browser compatibility, I found out that the theme broke on Google Chrome, which, led me to spiral down several fixes and customisations to an otherwise very satisfying theme.
 
-My past experience with cross-browser compatibility always stated that it's surely some Javascript that is messing up the images from rendering. After some hacking around, I seem to have found the culprit. Under the "_include" folder (the folder that contains snippings that are stitched together at runtime to render one's page) consited of a footer.html, for including all Javascript which the page uses. To my surprise, it contained the following code:
+My experience with cross-browser compatibility always stated that it's undoubtedly some Javascript that is messing up the images from rendering. After some hacking around, I seem to have found the culprit. Under the "_include" folder (the folder that contains snippings that are stitched together at runtime to render one's page) consisted of a footer.html, for including all Javascript which the page uses. To my surprise, it contained the following code:
 
 <pre><code class="html">
 {% raw %}
@@ -69,7 +69,7 @@ My past experience with cross-browser compatibility always stated that it's sure
 {% endraw %}
 </code></pre>
 
-Well, that's a problem. This would only mean that I have a blog which would <i>NEVER</i> update jquery and it's corresponding libraries. Plus, since this would be a disk read, it would be slower than a CDN. Time to change all these links to refer to a CDN rahter than local files!
+Well, that's a problem, which, would only mean that I have a blog which would NEVER update jquery and it's corresponding libraries. Plus, since this would be a disk read, it would be slower than a CDN. Time to change all these links to refer to a CDN rather than local files!
 
 <pre><code class="html">
 {% raw %}
@@ -78,9 +78,10 @@ Well, that's a problem. This would only mean that I have a blog which would <i>N
 {% endraw %}
 </code></pre>
 
-Thankfully, that ended up repairing the theme, and I did not have to do much hacking within viewport.js to get things running for chrome. However, this got me intrested in googling more and making the theme more to my linking.
+Thankfully, that ended up repairing the theme, and I did not have to do much hacking within viewport.js to get things running for chrome. However, this got me interested in googling more and making the theme more to my liking.
 
 <hr>
 ## **A New Navigation System**
 <hr>
 {% include media-image.html folder=images_folder file="a_new_navigation_system-selecting_a_blogging_platform_ii.jpg" title="Changing the Navigation" caption="Adding a search instead of a menu" %}
+Out of the box, the navigation menu seemed to be lovely and workable, but not designed for a blog, because a blog would have several posts, and in the end, it would pollute the menu making it bloated, and this had to change. I pondered hard on what could be the best solution for acing this problem, and in the end, thought that a search-style navigation would be the best fit. A lot of what one wants to go through is available on the home screen, but if the volume increases exponentially and someone needs to go to an article that she or he remembers vaguely, can utilise the search bar, which meant that the search had to be pristine.
