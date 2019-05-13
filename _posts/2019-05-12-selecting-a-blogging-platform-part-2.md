@@ -106,18 +106,14 @@ algolia:
 
 For the generation of the Algolia's ApplicationID and Search API Key, one needs to register at [Algolia](https://www.algolia.com/). Post that; there is some indexing that needs completion on one's Jekyll blog, by executing the following command:
 <pre><code class="plaintext">ALGOLIA_API_KEY='your_admin_api_key' bundle exec jekyll algolia</code></pre>
-Algolia's [Documntation](https://community.algolia.com/jekyll-algolia/getting-started.html) does an excellent job in showcasing how one can integrate Algolia with Jekyll.
+Algolia's [Documentation](https://community.algolia.com/jekyll-algolia/getting-started.html) does an excellent job in showcasing how one can integrate Algolia with Jekyll.
 
 The Algolia integration also meant that the frontend needed some changes, which is by changing the styling slightly to expand the white background of the Menu and inject a search bar within that space, and inclusion of Algolia's instantsearch.js within the search menu.
 
 <pre><code class="html">
 &lt;!-- Algolia --&gt;
-&lt;link rel="stylesheet" type="text/css" 
-href="https://cdn.jsdelivr.net/npm/instantsearch.js@3.0.0/
-dist/instantsearch.min.css"&gt;
-&lt;link rel="stylesheet" type="text/css" 
-href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/
-dist/instantsearch-theme-algolia.min.css"&gt;
+&lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@3.0.0/dist/instantsearch.min.css"&gt;
+&lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css"&gt;
 </code></pre>
 
 <hr>
