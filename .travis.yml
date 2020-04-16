@@ -47,3 +47,7 @@ deploy:
       - master
       - gh-pages
       - /pages-(.*)/
+
+env:
+  global:
+    - JEKYLL_ENV=production
