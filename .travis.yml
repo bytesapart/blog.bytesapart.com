@@ -1,5 +1,3 @@
-sudo: false
-
 language: ruby
 
 rvm: 2.6.6
@@ -31,6 +29,7 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - JEKYLL_ENV=production
 
 # Optional: disable email notifications about the outcome of your builds
 notifications:
@@ -38,16 +37,8 @@ notifications:
 
 deploy:
   provider: pages
-  skip_cleanup: true
+  cleanup: false
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   on:
-    branches:
-      only:
-      - master
-      - gh-pages
-      - /pages-(.*)/
-
-env:
-  global:
-    - JEKYLL_ENV=production
+    branch: master    
