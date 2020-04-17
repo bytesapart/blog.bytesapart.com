@@ -31,7 +31,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
   - JEKYLL_ENV=production
 
-# Optional: disable email notifications about the outcome of your builds
+# Optional: disable email notifications about the outcome of your builds.
 notifications:
   email: false
 
