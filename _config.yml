@@ -20,7 +20,7 @@ copyright: 		Licensed under <a href="https://creativecommons.org/publicdomain/ze
 
 # Build Settings
 permalinks: 	pretty
-highlighter: rouge
+highlighter: none
 markdown: kramdown
 
 # Gems
