@@ -6,6 +6,6 @@ task :default do
     # TravisCI will now have a site directory with our
     # statically generated files.
     sh("JEKYLL_ENV=production bundle exec jekyll build")
-    sh("ls -ltra")
+    sh("ls -ld")
     puts "Jekyll successfully built"
   end
