@@ -5,7 +5,7 @@ title: 			BytesApart
 name: 			BytesApart
 description: 	A programmer's candid learning experience
 # url: 			"http://localhost:4000"
-url: 			"https://bytesapart.github.io"
+url: 			"https://bytesapart.com"
 
 paginate: 		3
 paginate_path: 	"blog/page:num"
