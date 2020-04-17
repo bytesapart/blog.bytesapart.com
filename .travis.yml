@@ -37,11 +37,12 @@ notifications:
   email: false
 
 deploy:
-  provider: pages
+  provider: pages:git
   cleanup: false
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable.
   keep_history: true
   local_dir: _site/
   target_branch: master
+  edge: true
   on:
     branch: source
