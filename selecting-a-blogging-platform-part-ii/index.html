@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Selecting a Blogging Platform - Part II</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A programmer's candid learning experience" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="BytesApart" />
+    <meta property="og:title" content="Selecting a Blogging Platform - Part II" />
+    <meta property="og:description" content="A programmer's candid learning experience" />
+    <meta property="og:url" content="https://bytesapart.com/selecting-a-blogging-platform-part-ii/" />
+    <meta property="og:image" content="https://bytesapart.com/images//selecting-a-blogging-platform-part-ii/selecting_a_blogging_platform_ii.jpg" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Selecting a Blogging Platform - Part II" />
+    <meta name="twitter:description" content="A programmer's candid learning experience" />
+    <meta name="twitter:url" content="https://bytesapart.com/selecting-a-blogging-platform-part-ii/" />
+    <meta name="twitter:image" content="https://bytesapart.com/images//selecting-a-blogging-platform-part-ii/selecting_a_blogging_platform_ii.jpg" />
+    <meta name="twitter:site" content="@bytesapart" />
+
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Selecting a Blogging Platform - Part II" />
+    <link rel="canonical" href="/selecting-a-blogging-platform-part-ii/" />
+
+    <!-- HighlightJS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-dark.min.css">
+
+    <!-- Algolia -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+    <link rel="stylesheet" href="/assets/normalize.css" />
+    <link rel="stylesheet" href="/assets/animate.css" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    
+    <!-- CookieConsent -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css">
+
+    <!-- HighlightJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+     
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#edeff5",
+          "text": "#838391"
+        },
+        "button": {
+          "background": "#4b81e8"
+        }
+      },
+      "theme": "classic"
+    })});
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-3618368-4', 'auto');
+      ga('send', 'pageview');
+      </script>
+    
+
+  </head>
+
+  <body>
+    
+    <div class="spinner-wrapper gradient-3">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+
+  <header  data-animation="fadeInDownBig" class="nohidden">
+
+      <a href="/" class="logo">BytesApart</a>
+
+      
+      
+
+      <button class="toggle">Search</button>
+      <nav>
+        <ul>
+          <div id="search-searchbar"></div>
+          <div class="post-list" id="search-hits">
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+<section class="content">
+  
+	<article>
+    
+		<header class="gradient-3" data-animation="fadeInDownBig">
+
+			
+		
+		<div class="overlay" style="background-image: url(/images/selecting-a-blogging-platform-part-ii/selecting_a_blogging_platform_ii.jpg);" data-parallax="9"></div>
+	
+
+      
+<div class="excerpt">
+        
+	<span class="title">10 minutes</span>
+
+	
+
+		
+			<h1><a href="/selecting-a-blogging-platform-part-ii/" title="Selecting a Blogging Platform - Part II">Selecting a Blogging Platform - Part II</a></h1>
+		
+		
+	
+
+	<p>This post describes the technical challenges I faced when modifying an off-the-shelf theme to my liking, and using those experiences to learn technologies that make the internet run.</p>
+
+	
+
+		
+			<span class="meta">Published <b>Nov 3, 2018</b> in <b>programming</b></span>
+		
+	
+	
+
+</div>
+
+
+	<a href="#" title="Scroll" class="scroll">Scroll</a>
+
+
+		</header>
+
+		<div class="body" data-animation="fadeInUp">
+
+			<p>It’s been more than a year since my last blog post. Work commitments and balancing academic progress in my Masters in <a href="https://wqu.org/">Quantitative Finance</a>, unfortunately, ate up all my spare time, leading me to push learning new technologies and posting on my blog onto the backseat. As my academic session comes to a close, I happen to have freed up that time slot for doing regular blog posts with fixed time frames and working on a side-projects concerning what I love doing the most, that is, teaching!</p>
+
+<p>That said, this post is a continuation of the <a href="https://www.bytesapart.com/selecting-a-blogging-platform/">first part</a>, where I describe what led me to choose Jekyll as a blogging platform. This post pertains mostly to the technical aspects of buying some off-the-shelf component, modifying it to one’s liking and the challenges one faces in doing so.</p>
+
+<hr />
+
+<h2 id="the-jekyll-system"><strong>The Jekyll System</strong></h2>
+<hr />
+
+<div class="media image" data-animation="fadeInUp">
+
+	
+		<img src="/images/selecting-a-blogging-platform-part-ii/the_jekyll_structure-selecting_a_blogging_platform_ii.jpeg" alt="Jekyll Structure" />
+	
+
+	
+		<div class="caption" data-animation="fadeInUp">
+
+		  
+		  	<h4>Jekyll Structure</h4>
+		  
+
+		  
+		  	<p>Understanding Jekyll's file structure</p>
+		  
+
+		  
+
+		</div>
+	
+
+</div>
+
+<p>At this point, I wasn’t familiar with any of the cool, new stuff coming out from Javascript. For me, this ‘template’ style programming was completely new. Nonetheless, since Jekyll seemed to be the most convenient option that I had, I decided to dive straight into it.</p>
+
+<p>The best place to start off learning anything new is to check out the documentation. If it is a well-established source, it’ll surely contain some form of ‘Hello-World’ program. Jekyll’s website seems to have substantial documentation which was super newbie friendly. I started with the <a href="https://jekyllrb.com/docs/">quickstart</a> guide, which consisted of a  couple of reasonably straightforward commands, after the installation of <a href="https://jekyllrb.com/docs/installation/">Ruby</a>. At first, I was confused seeing two Ruby stable versions on the download page. I ended up with the lesser of the two keeping in mind that my theme was fairly old, so the more bleeding edge version of Ruby, the more likely I’ll have troubles setting the Jekyll blog up. I ended up following the instructions through and spinning up a default blog. To my surprise, the blog looked good in its minimal glory. To add to it, I was taken aback on how simple it was to get started, unlike WordPress where one needed to setup XAMPP or get a custom third-party software to spin up an instance.</p>
+
+<p>The following is a simple Jekyll structure, when you initialise an empty directory, with the assumption of following the quickstart guide on Jekyll’s website.</p>
+<pre><code class="plaintext">
+myblog
+  |- _posts
+  |- _site
+  |- .gitignore
+  |- _config.yml
+  |- 404.html
+  |- about.md
+  |- GemFile
+  |- Gemfile.lock
+  |- index.md
+</code></pre>
+
+<p>At this point, the possibility of what these files/folders meant made me feel lost. From my experiences, I’ve known to learn basics quickly from video tutorials and then get to the tricky part with the help of the documentation. I searched YouTube and found this great tutorial by <a href="https://www.youtube.com/watch?v=T1itpPvFWHI&amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB">GiraffeAcademy</a>, which worked wonders.</p>
+
+<p>Let’s start with the “_posts” folder, which, as the name suggests, is the folder where all the posts reside. If you do notice from the sample, the posts are all written in “.md” format, or <a href="https://guides.github.com/features/mastering-markdown/">MarkDown</a>. The “_site” folder consists of the rendered site when you run a ‘Jekyll serve’ command. I won’t be going in-depth about the basics of Jekyll since there are ample tutorials out there describing what liquid templating, front matter and the various other esoteric terms are. Instead, I’ll be focusing on my thought-process of taking an off-the-shelf theme and customizing it to my liking.</p>
+
+<hr />
+
+<h2 id="fixing-a-broken-theme"><strong>Fixing A Broken Theme</strong></h2>
+<hr />
+
+<div class="media image" data-animation="fadeInUp">
+
+	
+		<img src="/images/selecting-a-blogging-platform-part-ii/a_broken_theme-selecting_a_blogging_platform_ii.jpg" alt="A Broken Theme" />
+	
+
+	
+		<div class="caption" data-animation="fadeInUp">
+
+		  
+		  	<h4>A Broken Theme</h4>
+		  
+
+		  
+		  	<p>Repairing off-the-shelf theme</p>
+		  
+
+		  
+
+		</div>
+	
+
+</div>
+
+<p>The theme upon “Jekyll Serving”, seemed to work fine in Mozilla Firefox. Every theme is expected to run straight out-of-the-box when purchased since you are paying a premium for it. Unfortunately, I knew something had to be amiss since this theme’s inception was during the initial years of Jekyll’s popularity. Upon checking cross-browser compatibility, I found out that the theme broke on Google Chrome, which, led me to spiral down several fixes and customisations to an otherwise very satisfying theme.</p>
+
+<p>My experience with cross-browser compatibility always stated that it’s undoubtedly some Javascript that is messing up the images from rendering. After some hacking around, I seem to have found the culprit. Under the “_include” folder (the folder that contains snippings that are stitched together at runtime to render one’s page) consisted of a footer.html, for including all Javascript which the page uses. To my surprise, it contained the following code:</p>
+
+<pre><code class="html">
+
+&lt;script src="{{ '/assets/jquery-2.1.1...."&gt;&lt;/script&gt;
+&lt;script src="{{ '/assets/viewportchecker.js..."&gt;&lt;/script&gt;
+
+</code></pre>
+
+<p>Well, that’s a problem, which, would only mean that I have a blog which would NEVER update jquery and it’s corresponding libraries. Plus, since this would be a disk read, it would be slower than a CDN. Time to change all these links to refer to a CDN rather than local files!</p>
+
+<pre><code class="html">
+
+&lt;script src="https://code.jquery.com/..."&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/..."&gt;&lt;/script&gt;
+
+</code></pre>
+
+<p>Thankfully, that ended up repairing the theme, and I did not have to do much hacking within viewport.js to get things running for chrome. However, this got me interested in googling more and making the theme more to my liking.</p>
+
+<hr />
+
+<h2 id="a-new-navigation-system"><strong>A New Navigation System</strong></h2>
+<hr />
+
+<div class="media image" data-animation="fadeInUp">
+
+	
+		<img src="/images/selecting-a-blogging-platform-part-ii/a_new_navigation_system-selecting_a_blogging_platform_ii.jpg" alt="Changing the Navigation" />
+	
+
+	
+		<div class="caption" data-animation="fadeInUp">
+
+		  
+		  	<h4>Changing the Navigation</h4>
+		  
+
+		  
+		  	<p>Adding a search instead of a menu</p>
+		  
+
+		  
+
+		</div>
+	
+
+</div>
+
+<p>Out of the box, the navigation menu seemed to be lovely and workable, but not designed for a blog, because a blog would have several posts, and in the end, it would pollute the Menu making it bloated, and this had to change. I pondered hard on what could be the best solution for acing this problem, and in the end, thought that a search-style navigation would be the best fit. A lot of what one wants to go through is available on the home screen, but if the volume increases exponentially and someone needs to go to an article that she or he remembers vaguely, can utilise the search bar, which meant that the search had to be pristine.</p>
+
+<p>After searching for quite some time, I came across <a href="https://community.algolia.com/jekyll-algolia/">Algolia</a> and <a href="https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/">Lunr.js</a>. The former is how I wanted my search to be, that is, asynchronous. However, this does limit me to the number of indexing operations per month, but they happen to have amicable plans for anything open-source. I intended my blog to be under CC 1.0 and have a reasonably liberal license, which would not be a hindrance in the rare chance that my blog blows up. To integrate Jekyll with Algolia, I had to modify the “_config.yml” file to include Algolia’s gems.</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/yaml.min.js"></script>
+
+<pre><code class="yaml">
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-algolia
+
+# algolia
+algolia:
+  application_id: DDFRKSHRJD
+  index_name:     bytesapart
+  search_only_api_key: c68086dcf7e5c2f0a8b334dcd77252e9
+</code></pre>
+
+<p>For the generation of the Algolia’s ApplicationID and Search API Key, one needs to register at <a href="https://www.algolia.com/">Algolia</a>. Post that; there is some indexing that needs completion on one’s Jekyll blog, by executing the following command:</p>
+<pre><code class="plaintext">ALGOLIA_API_KEY='your_admin_api_key' bundle exec jekyll algolia</code></pre>
+<p>Algolia’s <a href="https://community.algolia.com/jekyll-algolia/getting-started.html">Documentation</a> does an excellent job in showcasing how one can integrate Algolia with Jekyll.</p>
+
+<p>The Algolia integration also meant that the frontend needed some changes, which is by changing the styling slightly to expand the white background of the Menu and inject a search bar within that space, and inclusion of Algolia’s instantsearch.js within the search menu.</p>
+
+<pre><code class="html">
+&lt;!-- Algolia --&gt;
+&lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@3.0.0/dist/instantsearch.min.css"&gt;
+&lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css"&gt;
+</code></pre>
+
+<hr />
+
+<h2 id="few-minor-tweaks"><strong>Few Minor Tweaks</strong></h2>
+<hr />
+
+<div class="media image" data-animation="fadeInUp">
+
+	
+		<img src="/images/selecting-a-blogging-platform-part-ii/minor_tweaks-selecting_a_blogging_platform_ii.jpg" alt="Tweaking styles" />
+	
+
+	
+		<div class="caption" data-animation="fadeInUp">
+
+		  
+		  	<h4>Tweaking styles</h4>
+		  
+
+		  
+		  	<p>Adding and editing some css and js</p>
+		  
+
+		  
+
+		</div>
+	
+
+</div>
+
+<p>I intended to use <a href="https://daneden.github.io/animate.css/">animate.css</a> for all animations (with a little over the top ones), which also meant that I need to load the entire page first and then display it; otherwise, a quick scroll ruins the animation. Therefore, I had to opt for a page-loader, and here, I did not want to use a GIF. A quick google leads me to this <a href="https://codepen.io/danielmorosan/pen/XmYBVx">codepen</a> page. I did change it slightly to my liking but used it overall as-is.</p>
+
+<p>For all the code snippets, I prefer using <a href="https://github.com/tonsky/FiraCode">Fira Code</a> as my font, since that is what I use in my IDE, along with a Dark Theme. The theme did come with a good code snipping highlighting tool, though I prefer using highlight.js since it has a plethora of syntax highlighting for many languages.</p>
+
+<p>Also, I needed something where I could host this Jekyll site, and make the builds automated, rather than building it manually and deploying to some old-school CPanel based server. My options were <a href="https://pages.github.com">GitHub Pages</a> and <a href="https://about.gitlab.com/product/pages/">GitLab Pages</a> out of which, at the time of when I was bringing up this blog, GitHub did not offer a custom gem build (which is odd, since Jekyll is a brainchild of GitHub). I ended up going with GitLab Pages, since the instructions were crystal clear, and that there was the support of custom gems which this theme has, and I may need some in the future. All this meant setting up a “.gitlab-ci.yml” file for trigging the Continous Integration build.</p>
+
+<pre><code language="yaml">
+pages:
+  stage: deploy
+  script:
+  - gem install jekyll
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+</code></pre>
+
+<p>There were also some other minor tweaks such as changing the path to the images folder to have a subfolder per post rather than treat the “images” folder as a dumping ground, and the addition of a 404.html page, rather than let the default GitLab Pages handle it. Some other changes involved adjusting some small margins, the addition of a horizontal line at the beginning of every section, and complete transparency of post images on hover. Overall these tweaks were minor and subtly changed the aesthetics but add to the overall ambience of the blog.</p>
+
+<p>In conclusion of the series, I believe choosing Jekyll was a right choice since getting up-and-running with it seemed very simple and did not feel as bloated as WordPress, even though the later is known the territory. A few changes were necessary to make the blog suite my needs, but those tweaks did not mean heading into convoluted PHP and hitting one’s head against the wall dealing with WordPress’s convoluted structure. Even though these first two posts are not something that offers much depth into programming or on diving deep into the changes, I do tend to take this blog in a more depth-first approach for future posts. Let’s say I needed to pull out of web-dev and needed some posts to get out in the time I thought about the direction of taking this blog.</p>
+
+
+		</div>
+
+		<footer>
+
+			
+
+  <div class="meta">
+
+    <div class="author" data-animation="fadeInUp">
+                  
+      <span class="title">Written by</span>
+
+      <h4>Osama Iqbal</h4>
+      <p>Data is always in a state of quantum superposition unless observed upon by visualisations.</p>
+
+      
+        <ul>
+          <li><a href="http://twitter.com/bytesapart" title="Twitter" class="icon twitter">Twitter</a></li>
+          
+          
+          <li><a href="https://www.linkedin.com/in/osamaiqbal/" title="LinkedIn" class="icon linkedin">LinkedIn</a></li>
+          
+          
+          
+          <li><a href="https://www.bytesapart.com/feed.xml" title="RSS" class="icon rss">RSS</a></li>
+        </ul>
+      
+
+    </div>
+
+    <div class="share" data-animation="fadeInUp">
+                  
+      <span class="title">Share</span>
+
+      <ul>
+        <li><a href="https://twitter.com/home?status=A%20programmer's%20candid%20learning%20experience%20https://bytesapart.com/selecting-a-blogging-platform-part-ii/" title="Tweet" class="icon twitter">Tweet</a></li>
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://bytesapart.com/selecting-a-blogging-platform-part-ii/" title="Share" class="icon facebook">Share</a></li>
+        <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://bytesapart.com/selecting-a-blogging-platform-part-ii/" title="Share" class="icon linkedin">Share</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+
+
+			
+  <div class="comments" data-animation="fadeInUp">
+    
+    <span class="title">Comments</span>
+    <div id="disqus_thread"></div>
+
+    <script type="text/javascript">
+      var disqus_shortname = 'bytesapart';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>
+      Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+
+  </div>
+
+
+			
+
+	<div class="pagination" data-animation="fadeInUp">
+		<a href="/selecting-a-blogging-platform/" title="View Older Posts" class="button older">Older</a>
+		
+	</div>
+
+
+
+
+
+		</footer>
+
+	</article>
+
+</section>
+
+
+
+	
+
+	
+
+	<section class="teaser gradient-2" data-animation="fadeInUp">
+	      
+		<div class="excerpt">
+	            
+			<span class="title">10 minutes</span>
+
+			
+				<h1><a href="/selecting-a-blogging-platform/" title="Selecting a Blogging Platform">Selecting a Blogging Platform</a></h1>
+			
+
+			<p>In the quest of starting a blog, I faced numerous choices of blogging platforms. Here's my experience with them, and why I ended up choosing what I chose.</p>
+
+			
+				<span class="meta">Published <b>Apr 22, 2018</b> in <b>programming</b></span>
+			
+
+		</div>
+
+	</section>
+
+
+
+    
+
+      <footer data-animation="fadeInUp">
+        <div class="copyright">
+          <b>Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.<br />
+            <br /></b> Hosted with <span class="heart"></span> at <a href="https://github.com/bytesapart/bytesapart.com">Github</a>.<br />
+            <br /></b> Powered by <a href="https://jekyllrb.com/">Jekyll</a>.
+          
+
+        	<br /><br /><hr><a href="mailto:osama@bytesapart.com" title="Send E-Mail">Contact</a>
+        	<a href="/feed.xml" title="Subscribe to Feed" class="footer-meta">RSS</a>
+        </div>
+      </footer>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js.map"></script>
+    <script src="/assets/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
+
+<script>
+const search = instantsearch({
+  appId: 'DDFRKSHRJD',
+  apiKey: 'c68086dcf7e5c2f0a8b334dcd77252e9',
+  indexName: 'bytesapart',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ],
+    hitsPerPage: 5
+  },
+  searchFunction: function(helper) {
+    var searchResults = $('#search-hits');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="post-item">
+      <span class="post-meta">${date}</span>
+      <h2><a class="post-link" href="${url}">${title}</a></h2>
+      <div class="post-snippet">${content}</div>
+      <hr class="post-hr">
+    </div>
+  `;
+}
+
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-searchbar',
+    placeholder: 'Search the blog',
+    magnifier: false,
+    autofocus: true,
+    poweredBy: true // This is required if you're on the free Community plan
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+
+search.start();
+</script>
+
+<style>
+.ais-search-box {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.post-item {
+  margin-bottom: 30px;
+}
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+  background-color: yellow;
+}
+.post-snippet .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+  background-color: yellow;
+}
+/* .post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+} */
+.post-hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eb2344;
+  margin: 1em 0;
+  padding: 0;
+}
+.post-meta{
+  font-size: 0.8rem;
+}
+.post-snippet{
+  font-size: 0.8rem;
+}
+</style>
+
+
+  </body>
+
+</html>

@@ -1,19 +1,349 @@
----
+<!DOCTYPE html>
+<html>
 
-layout:     default
-title:      A Programmer's candid learning experience
-type:       home
-navigation: true
+  <head>
 
-date:       2018-03-22 14:25:47
-image:      site_banner.jpg
-excerpt:
-gradient:   1
+    <title>A Programmer's candid learning experience</title>
 
----
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A programmer's candid learning experience" />
 
-{% for post in paginator.posts %}
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="BytesApart" />
+    <meta property="og:title" content="A Programmer's candid learning experience" />
+    <meta property="og:description" content="A programmer's candid learning experience" />
+    <meta property="og:url" content="https://bytesapart.com/" />
+    <meta property="og:image" content="https://bytesapart.com/images/site_banner.jpg" />
 
-  {% include summary.html %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="A Programmer's candid learning experience" />
+    <meta name="twitter:description" content="A programmer's candid learning experience" />
+    <meta name="twitter:url" content="https://bytesapart.com/" />
+    <meta name="twitter:image" content="https://bytesapart.com/images/site_banner.jpg" />
+    <meta name="twitter:site" content="@bytesapart" />
 
-{% endfor %}
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="A Programmer's candid learning experience" />
+    <link rel="canonical" href="/" />
+
+    <!-- HighlightJS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/atom-one-dark.min.css">
+
+    <!-- Algolia -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
+    <link rel="stylesheet" href="/assets/normalize.css" />
+    <link rel="stylesheet" href="/assets/animate.css" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    
+    <!-- CookieConsent -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css">
+
+    <!-- HighlightJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+     
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#edeff5",
+          "text": "#838391"
+        },
+        "button": {
+          "background": "#4b81e8"
+        }
+      },
+      "theme": "classic"
+    })});
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-3618368-4', 'auto');
+      ga('send', 'pageview');
+      </script>
+    
+
+  </head>
+
+  <body>
+    
+    <div class="spinner-wrapper gradient-1">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+
+  <header  data-animation="fadeInDownBig" class="nohidden">
+
+      <a href="/" class="logo">BytesApart</a>
+
+      
+      
+
+      <button class="toggle">Search</button>
+      <nav>
+        <ul>
+          <div id="search-searchbar"></div>
+          <div class="post-list" id="search-hits">
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+<section class="content">
+  
+	<article>
+    
+		<header class="gradient-1" data-animation="fadeInDownBig">
+
+			
+	
+		<div class="overlay" style="background-image: url(/images/site_banner.jpg);" data-parallax="9"></div>
+	
+
+      
+<div class="excerpt">
+        
+	<span class="title">less than 1 minute</span>
+
+	
+
+		
+			<h1>A Programmer's candid learning experience</h1>
+		
+		
+	
+
+	<p></p>
+
+	
+
+		
+			<span class="meta">Published <b>Mar 22, 2018</b></span>
+		
+	
+	
+
+</div>
+
+
+
+		</header>
+
+		<div class="body" data-animation="fadeInUp">
+
+			
+
+  
+  <div class="summary">
+
+    
+
+    
+      <h2><a href="/selecting-a-blogging-platform-part-ii/" title="Selecting a Blogging Platform - Part II">Selecting a Blogging Platform - Part II</a></h2>
+    
+
+    <p>This post describes the technical challenges I faced when modifying an off-the-shelf theme to my liking, and using those experiences to learn technologies that make the internet run. <a href="/selecting-a-blogging-platform-part-ii/" title="Read More" class="more">Read More</a></p>
+
+  </div>
+  <hr>
+
+
+
+
+
+  
+  <div class="summary">
+
+    
+
+    
+      <h2><a href="/selecting-a-blogging-platform/" title="Selecting a Blogging Platform">Selecting a Blogging Platform</a></h2>
+    
+
+    <p>In the quest of starting a blog, I faced numerous choices of blogging platforms. Here's my experience with them, and why I ended up choosing what I chose. <a href="/selecting-a-blogging-platform/" title="Read More" class="more">Read More</a></p>
+
+  </div>
+  <hr>
+
+
+
+
+
+
+		</div>
+
+		<footer>
+
+			
+
+			
+
+			
+
+
+
+		</footer>
+
+	</article>
+
+</section>
+
+
+
+    
+
+      <footer data-animation="fadeInUp">
+        <div class="copyright">
+          <b>Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.<br />
+            <br /></b> Hosted with <span class="heart"></span> at <a href="https://github.com/bytesapart/bytesapart.com">Github</a>.<br />
+            <br /></b> Powered by <a href="https://jekyllrb.com/">Jekyll</a>.
+          
+
+        	<br /><br /><hr><a href="mailto:osama@bytesapart.com" title="Send E-Mail">Contact</a>
+        	<a href="/feed.xml" title="Subscribe to Feed" class="footer-meta">RSS</a>
+        </div>
+      </footer>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js.map"></script>
+    <script src="/assets/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
+
+<script>
+const search = instantsearch({
+  appId: 'DDFRKSHRJD',
+  apiKey: 'c68086dcf7e5c2f0a8b334dcd77252e9',
+  indexName: 'bytesapart',
+  searchParameters: {
+    restrictSearchableAttributes: [
+      'title',
+      'content'
+    ],
+    hitsPerPage: 5
+  },
+  searchFunction: function(helper) {
+    var searchResults = $('#search-hits');
+    if (helper.state.query === '') {
+      searchResults.hide();
+      return;
+    }
+    helper.search();
+    searchResults.show();
+  }
+});
+
+const hitTemplate = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+  const url = hit.url;
+  const title = hit._highlightResult.title.value;
+  const content = hit._highlightResult.html.value;
+
+  return `
+    <div class="post-item">
+      <span class="post-meta">${date}</span>
+      <h2><a class="post-link" href="${url}">${title}</a></h2>
+      <div class="post-snippet">${content}</div>
+      <hr class="post-hr">
+    </div>
+  `;
+}
+
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-searchbar',
+    placeholder: 'Search the blog',
+    magnifier: false,
+    autofocus: true,
+    poweredBy: true // This is required if you're on the free Community plan
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  })
+);
+
+
+search.start();
+</script>
+
+<style>
+.ais-search-box {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.post-item {
+  margin-bottom: 30px;
+}
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+  background-color: yellow;
+}
+.post-snippet .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+  background-color: yellow;
+}
+/* .post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+} */
+.post-hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eb2344;
+  margin: 1em 0;
+  padding: 0;
+}
+.post-meta{
+  font-size: 0.8rem;
+}
+.post-snippet{
+  font-size: 0.8rem;
+}
+</style>
+
+
+  </body>
+
+</html>
